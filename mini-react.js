@@ -341,8 +341,7 @@ const React = {
 function Counter() {
   const [state, setState] = React.useState(1);
 
-  // return <h1 onclick={() => setState((c) => c + 1)}>Count:{state} </h1>;
-  return React.createElement('h1',{onclick:() => setState((c) => c + 1)},'Count')
+  return <h1 onclick={() => setState((c) => c + 1)}>Count:{state} </h1>;
 }
 
 const element = <Counter />;
